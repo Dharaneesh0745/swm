@@ -1,9 +1,10 @@
-import { Image, ScrollView, StatusBar, Text, View } from "react-native";
+import { Image, ScrollView, Text, View } from "react-native";
 import React from "react";
 import { Link, router } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { images } from "../constants";
 import GetStartedButton from "@/components/CustomButtons.tsx/GetStartedButton";
+import { StatusBar } from "expo-status-bar";
 
 const App = () => {
   return (
@@ -44,7 +45,7 @@ const App = () => {
         </View>
       </ScrollView>
 
-      <StatusBar backgroundColor="white" barStyle="light-content" />
+      <StatusBar backgroundColor="white" style="light" />
     </SafeAreaView>
   );
 };
